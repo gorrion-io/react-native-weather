@@ -1,7 +1,7 @@
-import React from "react";
-import { createStackNavigator } from "react-navigation";
-import Main from "./Main";
-import CityImage from "./CityImage";
+import React from "react"
+import { createStackNavigator } from "react-navigation"
+import Main from "./Main"
+import CityImage from "./CityImage"
 
 export default createStackNavigator(
   {
@@ -9,6 +9,6 @@ export default createStackNavigator(
     City: CityImage,
   },
   {
-    initialRouteName: "Home"
+    initialRouteName: "Home",
   }
-);
+)
