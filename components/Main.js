@@ -25,6 +25,11 @@ export default class Main extends React.Component {
       ],
       { cancelable: false }
     )
+    navigator.geolocation.getCurrentPosition(async (position) => {
+      const cities = await (await fetch(`https://www.metaweather.com/api/location/search/?lattlong=${position.coords.latitude},${position.coords.longitude}`)).json()
+      this.setState({term: cities[0].title})
+    })
+    
   }
 
   handleInputChange = text => {
