@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native"
 
 export default (LocationId = props => (
   <View style={styles.idContainer}>
-    <Text>{props.location.title}</Text>
+    <Text>{props.selectedCity}</Text>
   </View>
 ))
 

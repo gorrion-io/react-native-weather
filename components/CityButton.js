@@ -6,7 +6,7 @@ export default (CityButton = props => (
     <Button
       title="Idź do fotki"
       onPress={() => {
-        props.navigation.navigate("City", { location: props.location })
+        props.navigation.navigate("City")
       }}
     />
   </View>
